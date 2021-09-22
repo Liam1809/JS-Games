@@ -17,11 +17,9 @@ const displayMessage = message => {
   messageEl.textContent = message;
 };
 
+// init function
 function init() {
   secretNumber = Math.floor(Math.random() * 20) + 1; // 1 - 20
-  score = 20;
-  highScore = 0;
-  playing = true;
 
   displayMessage('Start guessing...');
   document.querySelector('body').classList.remove('winner');
@@ -31,9 +29,7 @@ function init() {
 
   guessEl.value = '';
   scoreEl.textContent = 20;
-  highScoreEl.textContent = 0;
 
-  highScore = 0;
   score = 20;
   playing = true;
 }

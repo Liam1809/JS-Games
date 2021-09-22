@@ -4,7 +4,7 @@
   --color-white: #eee;
   --color-black: #222;
   --color-gray: #ccc;
-  --color-light-green: #60b347;
+  --color-light-green: #90ee90;
 }
 
 * {
@@ -125,7 +125,7 @@ h1 {
   background: var(--color-light-green);
 }
 
-/* RESPONSIVE */
+/* Responsive */
 @media only screen and (max-width: 48rem) {
   h1 {
     font-size: 1.5rem;
