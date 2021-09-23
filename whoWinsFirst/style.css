@@ -5,6 +5,7 @@
   --color-darkpurple: #7027a0;
   --color-ocean: #1db9c3;
   --color-blackish: #333;
+  --color-redpink: #c7365f;
 }
 
 * {
@@ -112,12 +113,12 @@ main {
   font-size: 1.8rem;
 }
 
-.player--1 {
+.player--0 {
   border-top-left-radius: 1.2rem;
   border-bottom-left-radius: 1.2rem;
 }
 
-.player--2 {
+.player--1 {
   border-top-right-radius: 1.2rem;
   border-bottom-right-radius: 1.2rem;
 }
@@ -191,8 +192,8 @@ btn:focus {
 }
 
 .player--winner {
-  background-color: #2f2f2f;
-  color: #c7365f;
+  background-color: var(--color-blackish);
+  color: var(--color-redpink);
   opacity: 1;
 }
 .player--winner .current {
