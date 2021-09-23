@@ -15,7 +15,7 @@ const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
 
 // Initialise
-let dicePoint, currentScore, totalScore, playingActive, playing;
+let dicePoint, currentScore, totalScore, playingActive, playing, targetScore;
 
 // init func
 const init = () => {
@@ -23,12 +23,14 @@ const init = () => {
   totalScore = [0, 0]; // 0: player1, 1: player2
   playingActive = 0; // controll active player
   playing = true; // controll avtive playing
+  targetScore = 20; // change the target score to win if desirable
 
   currentScoreP1.textContent = 0;
   currentScoreP2.textContent = 0;
   totalScoreP1.textContent = 0;
   totalScoreP2.textContent = 0;
 
+  diceDisplay.classList.add('hidden');
   player1.classList.remove('player--winner');
   player2.classList.remove('player--winner');
   player2.classList.remove('player--active');
@@ -76,7 +78,7 @@ btnHold.addEventListener('click', () => {
       totalScore[playingActive];
 
     // player wins
-    if (totalScore[playingActive] >= 20) {
+    if (totalScore[playingActive] >= targetScore) {
       playing = false;
 
       document.querySelector(`#current--${playingActive}`).textContent = 0;
