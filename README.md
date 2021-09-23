@@ -9,3 +9,9 @@
 - Guessing the secrect number in the '?' Box
 - Score will be reduced for every wrong guessing
 - You lose if score is below 1
+
+## Game 2: Who Wins First
+
+### Link to play: https://whowinsfirst.netlify.app
+
+#### Rules:
