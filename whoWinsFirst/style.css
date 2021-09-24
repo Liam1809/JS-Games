@@ -136,7 +136,7 @@ main {
   width: 8.5rem;
   height: 8.5rem;
   position: absolute;
-  top: 18rem;
+  top: 35%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -176,15 +176,15 @@ btn:focus {
 }
 
 .btn--new {
-  top: 10rem;
+  top: 25%;
 }
 
 .btn--roll {
-  top: 36rem;
+  top: 68%;
 }
 
 .btn--hold {
-  top: 40rem;
+  top: 75%;
 }
 
 .hidden {
@@ -198,4 +198,163 @@ btn:focus {
 }
 .player--winner .current {
   opacity: 1;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 62rem) {
+  header {
+    font-size: 1.8rem;
+  }
+
+  main {
+    max-width: 55rem;
+  }
+
+  .player {
+    padding: 8rem;
+  }
+
+  /* Elements */
+
+  .name--player {
+    font-size: 2.4rem;
+  }
+
+  .total--score {
+    font-size: 4.8rem;
+  }
+
+  .current {
+    padding: 1.4rem;
+  }
+
+  .current--label {
+    font-size: 1rem;
+  }
+
+  .current--score {
+    font-size: 1.6rem;
+  }
+
+  .dice {
+    width: 8rem;
+    height: 8rem;
+    top: 38%;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.4rem 1.4rem;
+  }
+
+  .btn::first-letter {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 48rem) {
+  header {
+    font-size: 1.5rem;
+  }
+
+  main {
+    max-width: 40rem;
+  }
+
+  .player {
+    padding: 5.5rem;
+  }
+
+  /* Elements */
+
+  .name--player {
+    font-size: 1.8rem;
+  }
+
+  .total--score {
+    font-size: 4rem;
+  }
+
+  .current {
+    padding: 1.4rem;
+  }
+
+  .current--label {
+    font-size: 0.8rem;
+  }
+
+  .current--score {
+    font-size: 1.4rem;
+  }
+
+  .dice {
+    width: 7rem;
+    height: 7rem;
+    top: 40%;
+  }
+
+  .btn--roll {
+    top: 66%;
+  }
+
+  .btn--hold {
+    top: 72%;
+  }
+}
+
+@media only screen and (max-width: 48rem) {
+  header {
+    font-size: 1.2rem;
+  }
+
+  main {
+    max-width: 30rem;
+  }
+
+  .player {
+    padding: 4rem;
+  }
+
+  /* Elements */
+
+  .name--player {
+    font-size: 1.2rem;
+  }
+
+  .total--score {
+    font-size: 3.5rem;
+  }
+
+  .current {
+    padding: 1.2rem;
+  }
+
+  .current--score {
+    font-size: 1.2rem;
+  }
+
+  .dice {
+    width: 6rem;
+    height: 6rem;
+    top: 40%;
+  }
+
+  .btn {
+    display: flex;
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .btn::first-letter {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+
+  .btn--roll {
+    top: 66%;
+  }
+
+  .btn--hold {
+    top: 70%;
+  }
 }
